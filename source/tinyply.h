@@ -167,7 +167,7 @@ namespace tinyply
 	}
 
 	template <typename T>
-	inline PlyProperty::Type property_type_for_type(std::vector<T> & theType)
+	inline PlyProperty::Type property_type_for_type(std::vector<T> & /*theType*/)
 	{
 		if (std::is_same<T, int8_t>::value)          return PlyProperty::Type::INT8;
 		else if (std::is_same<T, uint8_t>::value)    return PlyProperty::Type::UINT8;
